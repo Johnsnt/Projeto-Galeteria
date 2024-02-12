@@ -1,0 +1,140 @@
+
+/******* Secao Banner *******/
+
+.secao-banner {
+    height: 90vh;
+    /* margin-top: 80px; */
+    background-image: url('../../../public/assets/banner-home.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(249, 219, 121);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.banner h1 {
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 3px 5px 3px #474747;
+}
+
+/******* Secao Banner *******/
+
+/******* Secao Sabores *******/
+
+.secao-sabores, 
+.secao-sabores-eventos,
+.secao-sabores-sobrenos {
+    display: flex;
+}
+
+.secao-sabores img, 
+.secao-sabores-eventos img,
+.secao-sabores-sobrenos img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+/* Organiza os textos dentro da caixa  */
+.info-sabores,
+.info-sabores-eventos,
+.info-sabores-sobrenos {
+    width: 50%;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-sabores h2,
+.info-sabores-eventos h2,
+.info-sabores-sobrenos h2 {
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.info-sabores span,
+.info-sabores-eventos span,
+.info-sabores-sobrenos span {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.info-sabores p,
+.info-sabores-eventos p,
+.info-sabores-sobrenos p {
+    padding: 0 100px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+
+/******* Secao Sabores *******/
+
+@media (max-width:768px) {
+    /* Banner titulo */
+    .banner h1 {
+        font-size: 60px;
+    }
+
+    .secao-sabores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-sabores img {
+        width: 100%;
+    }
+
+    .info-sabores,
+    .info-sabores-eventos,
+    .info-sabores-sobrenos {
+        width: 100%;
+        padding: 100px 10px;
+        text-align: center;
+    }
+    /* Usado o column-reverse para inverter a ordem do texto e img */
+    .secao-sabores-eventos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .secao-sabores-eventos img {
+        width: 100%;
+    }
+
+    .secao-sabores-sobrenos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-sabores-sobrenos img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:425px) {
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .info-sabores h2,
+    .info-sabores-eventos h2,
+    .info-sabores-sobrenos h2 {
+        line-height: 40px;
+    }
+}

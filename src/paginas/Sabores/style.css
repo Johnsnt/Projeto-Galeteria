@@ -1,0 +1,114 @@
+.banner-pagina {
+    height: 60vh;
+    /* margin-top: 80px; */
+    background-image: url('../../../public/assets/banner-sabores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(249, 219, 121);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-pagina h1 {
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+/* Sesação banner */
+
+
+
+/* Modifica a section */
+.secao-sabores-geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.secao-sabores-geral h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 100px 0 5px 0;
+}
+
+
+
+
+/* Agrupador do título e cards */
+.sabores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+    margin-bottom: 100px;
+    /* background-color: blanchedalmond; */
+}
+
+
+
+
+/* card */
+.sabores-card {
+    /* background-color: brown; */
+    width: 30%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 15px 2px #d9dde1;
+}
+
+.sabores-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.sabores-card p {
+    margin: 10px 0;
+}
+
+
+@media (max-width:768px) {
+    .banner-pagina h1 {
+        font-size: 55px;
+    }
+
+    .sabores-container {
+        flex-direction: column;
+    }
+
+    .sabores-card {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    .banner-pagina {
+        height: 40vh;
+    }
+    .banner-pagina h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+
+    .sabores-container {
+        align-items: center;
+    }
+
+    .sabores-card {
+        width: 90%;
+    }
+}
+
