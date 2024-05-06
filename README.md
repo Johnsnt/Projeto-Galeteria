@@ -1,5 +1,5 @@
 # Sorveteria
-Meu segundo projeto feito utilizando o framework react e testando a biblioteca react-router-dom para o gerenciamento de rotas. O site tem o intuito de mostrar 
+Meu segundo projeto feito utilizando o framework react e testando a biblioteca react-router-dom para o gerenciamento de rotas. O site tem o intuito de mostrar os produtos e as informações da sorveteria.
 
 ## Tecnologias utilizadas
 * React JS: biblioteca JavaScript para construção de interfaces de usuário.
